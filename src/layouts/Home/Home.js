@@ -7,9 +7,13 @@ import gamestackTexture from 'assets/gamestack-login.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+// import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+// import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import hmsPreview from 'assets/hms-preview.png';
+import manpower from 'assets/manpower.jpeg';
+import algoVE from 'assets/algo-ve-preview.png';
+import algoVE2 from 'assets/algoVE2.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -18,7 +22,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Student', 'Learner'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -83,16 +87,16 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Hostel Management System"
+        description="A platform for students to address all their hostel issues with their hostel warden"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [hmsPreview, hmsPreview],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -104,20 +108,20 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Algorithms VE"
+        description="A visualizer website for certain algorithms"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://algorithm-ve.pages.dev"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
+              srcSet: [algoVE],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              srcSet: [algoVE2],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
@@ -128,16 +132,16 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Manpower Management"
+        description="A productive dashboard to manage the tasks at hand of members of a community or an organization"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://github.com/0xSidBanerjee/Manpower-Management"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
+              srcSet: [manpower],
               placeholder: sliceTexturePlaceholder,
             },
           ],

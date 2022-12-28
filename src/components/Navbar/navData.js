@@ -15,22 +15,27 @@ export const navLinks = [
     label: 'Contact',
     pathname: '/contact',
   },
+  {
+    label: 'Resume',
+    pathname:
+      'https://drive.google.com/file/d/137w4azC-DAfdSPbb30xi2k0dwmblGwgw/view?usp=share_link',
+  },
 ];
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
-  },
-  {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/mayankjain25',
     icon: 'github',
+  },
+  {
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/mayank-jain-688409208/',
+    icon: 'linkedin',
+  },
+  {
+    label: 'Leetcode',
+    url: 'https://leetcode.com/jainmayank2509/',
+    icon: 'leetcode',
   },
 ];

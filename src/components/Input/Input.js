@@ -19,6 +19,7 @@ export const Input = ({
   required,
   maxLength,
   type,
+  name,
   onChange,
   ...rest
 }) => {
@@ -63,6 +64,7 @@ export const Input = ({
           onFocus={() => setFocused(true)}
           onBlur={handleBlur}
           value={value}
+          name={name}
           onChange={onChange}
           autoComplete={autoComplete}
           required={required}

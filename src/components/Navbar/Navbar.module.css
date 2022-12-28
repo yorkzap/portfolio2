@@ -107,6 +107,7 @@
   justify-content: center;
   position: relative;
   z-index: var(--zIndex2);
+  /* margin-top: 60px; */
 
   @media (--mediaMobile), (--mediaMobileLS) {
     flex-direction: row;
@@ -133,7 +134,7 @@
   height: var(--space2XL);
   color: var(--colorTextLight);
   transition: color var(--durationM) var(--bezierFastoutSlowin);
-
+  margin-top: -10px;
   &:hover,
   &:focus,
   &:active {
