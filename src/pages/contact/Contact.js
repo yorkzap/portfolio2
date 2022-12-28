@@ -3,7 +3,6 @@ import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Footer } from 'components/Footer';
 import { Heading } from 'components/Heading';
-import { Icon } from 'components/Icon';
 import { Input } from 'components/Input';
 import { Meta } from 'components/Meta';
 import { Section } from 'components/Section';
@@ -21,8 +20,7 @@ export const Contact = () => {
   // const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
-  const [senderEmail, setSenderEmail] = useState('');
-  const [senderMsg, setSenderMsg] = useState('');
+
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
   // const [statusError, setStatusError] = useState('');
@@ -49,7 +47,7 @@ export const Contact = () => {
       //   }),
       // });
       // console.log(form.current);
-      const response = emailjs
+      emailjs
         .sendForm(
           'service_nazmh8l',
           'template_g5tsvbh',
@@ -199,24 +197,24 @@ export const Contact = () => {
   );
 };
 
-function getStatusError({
-  status,
-  errorMessage,
-  fallback = 'There was a problem with your request',
-}) {
-  if (status === 200) return false;
+// function getStatusError({
+//   status,
+//   errorMessage,
+//   fallback = 'There was a problem with your request',
+// }) {
+//   if (status === 200) return false;
 
-  const statuses = {
-    500: 'There was a problem with the server, try again later',
-    404: 'There was a problem connecting to the server. Make sure you are connected to the internet',
-  };
+//   const statuses = {
+//     500: 'There was a problem with the server, try again later',
+//     404: 'There was a problem connecting to the server. Make sure you are connected to the internet',
+//   };
 
-  if (errorMessage) {
-    return errorMessage;
-  }
+//   if (errorMessage) {
+//     return errorMessage;
+//   }
 
-  return statuses[status] || fallback;
-}
+//   return statuses[status] || fallback;
+// }
 
 function getDelay(delayMs, offset = numToMs(0), multiplier = 1) {
   const numDelay = msToNum(delayMs) * multiplier;

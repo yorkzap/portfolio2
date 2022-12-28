@@ -1,7 +1,5 @@
-import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
+
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -15,7 +13,6 @@ import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 import myImage from 'assets/mayank.jpg';
-import myImagePNG from 'assets/mayank-removebg-preview.png';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
@@ -23,12 +20,13 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Mayank, and currently I'm pursuing Engineering in Information Technology from{' '}
-      <Link href="https://kiit.ac.in">KIIT University</Link>. I'm into Web Development,
-      and focus on MERN stack development. I'm a self-taught developer, and I'm always
-      looking for opportunities to learn and grow. I'm a quick learner, and I'm always
-      ready to learn new things. I'm a team player, and I'm always ready to help others.
-      Apart from this, I'm a content writer as well.
+      I&apos;m Mayank, and currently I&apos;m pursuing Engineering in Information
+      Technology from <Link href="https://kiit.ac.in">KIIT University</Link>. I&apos;m
+      into Web Development, and focus on MERN stack development. I&apos;m a self-taught
+      developer, and I&apos;m always looking for opportunities to learn and grow. I&apos;m
+      a quick learner, and I&apos;m always ready to learn new things. I&apos;m a team
+      player, and I&apos;m always ready to help others. Apart from this, I&apos;m a
+      content writer as well.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am a member of the{' '}
