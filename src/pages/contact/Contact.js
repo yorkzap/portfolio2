@@ -55,8 +55,9 @@ export const Contact = () => {
           'F0PrBEbycNEQrkIFx'
         )
         .then(res => {
-          setSenderEmail('');
-          setSenderMsg('');
+          // setSenderEmail('');
+          // setSenderMsg('');
+          console.log(res);
         });
 
       // const responseMessage = await response.json();

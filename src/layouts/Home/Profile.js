@@ -33,9 +33,9 @@ const ProfileText = ({ visible, titleId }) => (
       <Link href="https://msckiit.tech">Microsoft Student Community, KIIT Chapter</Link>{' '}
       as a <span style={{ fontWeight: 'bold' }}>Creative and Operations Executive</span>{' '}
       and <span style={{ fontWeight: 'bold' }}>Senior Executive</span> at the{' '}
-      <Link href="https://ecell.org.in">KIIT Entrepreneurship Cell</Link>. I've helped
-      organised several events having a cumulative footfall of more than 3000+ people, and
-      have the experience of managing a team of 100+ members as well.
+      <Link href="https://ecell.org.in">KIIT Entrepreneurship Cell</Link>. I&apos;ve
+      helped organised several events having a cumulative footfall of more than 3000+
+      people, and have the experience of managing a team of 100+ members as well.
     </Text>
   </Fragment>
 );
