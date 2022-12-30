@@ -20,13 +20,13 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I&apos;m Mayank, and currently I&apos;m pursuing Engineering in Information
-      Technology from <Link href="https://kiit.ac.in">KIIT University</Link>. I&apos;m
-      into Web Development, and focus on MERN stack development. I&apos;m a self-taught
-      developer, and I&apos;m always looking for opportunities to learn and grow. I&apos;m
-      a quick learner, and I&apos;m always ready to learn new things. I&apos;m a team
-      player, and I&apos;m always ready to help others. Apart from this, I&apos;m a
-      content writer as well.
+      I&apos;m Mayank, currently enrolled at{' '}
+      <Link href="https://kiit.ac.in">KIIT University</Link> to pursue an engineering
+      degree in Information Technology. My area of expertise in web development is the
+      MERN stack. As a self-taught developer, I'm constantly searching for ways to
+      improve. I pick things up quickly, and I'm constantly eager to learn something new.
+      I work well in teams and am constantly willing to lend a hand. In addition to this,
+      I am a <b>Content Writer/Marketer</b> as well.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am a member of the{' '}
