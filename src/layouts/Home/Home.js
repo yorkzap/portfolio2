@@ -10,6 +10,8 @@ import hmsPreview from 'assets/hms-preview.png';
 import manpower from 'assets/manpower.jpeg';
 import algoVE from 'assets/algo-ve-preview.png';
 import algoVE2 from 'assets/algoVE2.png';
+import stockDash from 'assets/stock-dashboard.png';
+import stockDash2 from 'assets/stockDash2.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -27,10 +29,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -139,6 +142,31 @@ export const Home = () => {
             {
               srcSet: [manpower],
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Stocks Dashboard"
+        description="A dashboard to display some of the top performing stocks in the Indian market"
+        buttonText="View website"
+        buttonLink="http://stock-dashboard.kiitians.com/"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [stockDash],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [stockDash2],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
