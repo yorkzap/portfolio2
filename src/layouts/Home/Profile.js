@@ -23,10 +23,10 @@ const ProfileText = ({ visible, titleId }) => (
       I&apos;m Mayank, currently enrolled at{' '}
       <Link href="https://kiit.ac.in">KIIT University</Link> to pursue an engineering
       degree in Information Technology. My area of expertise in web development is the
-      MERN stack. As a self-taught developer, I'm constantly searching for ways to
-      improve. I pick things up quickly, and I'm constantly eager to learn something new.
-      I work well in teams and am constantly willing to lend a hand. In addition to this,
-      I am a <b>Content Writer/Marketer</b> as well.
+      MERN stack. As a self-taught developer, I&apos;m constantly searching for ways to
+      improve. I pick things up quickly, and I&apos;m constantly eager to learn something
+      new. I work well in teams and am constantly willing to lend a hand. In addition to
+      this, I am a <b>Content Writer/Marketer</b> as well.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am a member of the{' '}
