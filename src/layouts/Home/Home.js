@@ -7,8 +7,9 @@ import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 
 import hmsPreview from 'assets/hms-preview.png';
-import manpower from 'assets/manpower.jpeg';
+import cicd from 'assets/cicd.png';
 import algoVE from 'assets/algo-ve-preview.png';
+import blockchain from 'assets/blockchain.png';
 import algoVE2 from 'assets/algoVE2.png';
 import stockDash from 'assets/stock-dashboard.png';
 import stockDash2 from 'assets/stockDash2.png';
@@ -92,7 +93,7 @@ export const Home = () => {
         buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Displaying the home page of the website.',
           textures: [
             {
               srcSet: [hmsPreview, hmsPreview],
@@ -103,25 +104,21 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        alternate
+        // alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Algorithms VE"
-        description="A visualizer website for certain algorithms"
-        buttonText="View website"
-        buttonLink="https://algorithm-ve.pages.dev"
+        title="Blockchain Based FIR Registration System"
+        description="A blockchain based FIR registration system to ensure transparency and security of the data to facilitate and safeguard the interests of the victim."
+        buttonText="Visit repository"
+        buttonLink="https://github.com/mayankjain25/Blockchain-Based-FIR-System"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'landing page',
           textures: [
             {
-              srcSet: [algoVE],
+              srcSet: [blockchain],
               placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [algoVE2],
-              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
@@ -140,7 +137,7 @@ export const Home = () => {
           alt: 'Visual description of the pipeline workflow',
           textures: [
             {
-              srcSet: [manpower],
+              srcSet: [cicd],
               placeholder: sliceTexturePlaceholder,
             },
           ],
