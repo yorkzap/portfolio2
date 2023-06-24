@@ -30,8 +30,11 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am a member of the{' '}
-      <Link href="https://msckiit.tech">Microsoft Student Community, KIIT Chapter</Link>{' '}
-      as a <span style={{ fontWeight: 'bold' }}>Creative and Operations Executive</span>{' '}
+      <Link href="https://msckiit.tech">
+        Microsoft Learn Student Ambassadors, KIIT Chapter
+      </Link>{' '}
+      as a{' '}
+      <span style={{ fontWeight: 'bold' }}>Creative Lead and Operations Executive</span>{' '}
       and <span style={{ fontWeight: 'bold' }}>Senior Executive</span> at the{' '}
       <Link href="https://ecell.org.in">KIIT Entrepreneurship Cell</Link>. I&apos;ve
       helped organised several events having a cumulative footfall of more than 3000+
