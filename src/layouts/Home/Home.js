@@ -131,13 +131,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Manpower Management"
-        description="A productive dashboard to manage the tasks at hand of members of a community or an organization"
+        title="CI/CD Pipeline using Jenkins and Docker"
+        description="his is a basic starter website that was built incorporating a CI/CD Pipeline involving GitHub Webhooks and Jenkins. Every push is deployed via an nginx docker container"
         buttonText="View project"
-        buttonLink="https://github.com/0xSidBanerjee/Manpower-Management"
+        buttonLink="https://github.com/mayankjain25/Microo-Starter-Website"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Visual description of the pipeline workflow',
           textures: [
             {
               srcSet: [manpower],
