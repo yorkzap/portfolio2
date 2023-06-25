@@ -1,8 +1,22 @@
 # Personal portfolio
 
-[![Site preview](/public/site-preview.png)](https://hamishw.com)
+[![Site preview](/public/site-preview.png)](https://mayankjain25.netlify.app)
 
-My design portfolio to showcase a few projects. Built with [Next.js](https://nextjs.org/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
+This is my personal portfolio website to showcase some of my projects as well as my interests.
+
+## Built With
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
+
+## Features
+
+- **Next.js**: The website is built using Next.js, a popular React framework that provides server-side rendering and other performance optimizations out of the box.
+- **Three.js**: The 3D visualizations and animations on the website are powered by Three.js, a JavaScript library for creating and displaying 3D computer graphics in web browsers.
+- **Responsive Design**: The website is fully responsive and optimized for different screen sizes, ensuring a consistent experience across devices.
+- **Project Showcase**: The portfolio section highlights my projects, providing detailed information, screenshots, and links to live demos or GitHub repositories.
+- **Skills & Expertise**: The website showcases my skills and expertise through interactive visual elements, charts, or other representations.
+- **Contact Form**: A contact form is included to allow visitors to get in touch with me easily. The form captures user input and sends it to a specified email address.
 
 ## Install & run
 
@@ -18,54 +32,14 @@ Once it's done start up a local server with:
 npm run dev
 ```
 
-To view the components storybook:
+## Deployment [![Netlify Status](https://api.netlify.com/api/v1/badges/d07f3b07-070a-41d7-bf4e-becc24e52a11/deploy-status)](https://app.netlify.com/sites/mayankjain25/deploys)
 
-```bash
-npm run storybook
-```
+This site has been deployed on Netlify. You can visit it [here](https://mayankjain25.netlify.app)
 
-To create a production build:
+## License
 
-```bash
-npm run build
-```
+This project is licensed under the [MIT License](LICENSE).
 
-## Deployment
+---
 
-I've set up the site using AWS for hosting and serverless functions. You'll need an AWS account and the AWS CLI installed in order to deploy.
-
-Deploy the site to s3:
-
-```bash
-npm run deploy
-```
-
-Deploy serverless functions:
-
-```bash
-cd functions
-```
-
-```bash
-npm run deploy:api
-```
-
-## Permissions
-
-I'm cool with anyone using the code or parts of the code for their own site, it is open source so people can learn from it and adapt it. However, I would encourage you to modify the theme and components it to make it your own. If you are using the site's design largely unmodified, I'd appreciate being credited as the designer of the website.
-
-I do not give permission to present any of my projects as your own (this is being actively used as my portfolio site and these are my real projects I've worked on).
-
-## FAQs
-
-<details>
-  <summary>How do I change the color on the <code>DisplacementSphere</code> (blobby rotating thing in the background).</summary>
-  
-  You'll need to edit the fragment shader. [Check out this issue for more details](https://github.com/HamishMW/portfolio/issues/19#issuecomment-870996615).
-</details>
-
-<details>
-  <summary>How do I get the contact form to work?</summary>
-  
-  It's set up using a serverless function with AWS Lambda. You'll need to set up an AWS account and deploy the function. [Refer to this issue for more details](https://github.com/HamishMW/portfolio/issues/21#issuecomment-958727113).
-</details>
+Thank you for visiting my personal portfolio website! I hope you find it informative and enjoyable. If you have any questions or feedback, please don't hesitate to reach out.
