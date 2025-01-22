@@ -23,7 +23,7 @@ const ProfileText = ({ visible, titleId }) => (
       I’m Raj, currently I live in Nanaimo and Victoria studying Software Engineering and working as developer at {' '}
       <Link href="https://www.lucatheory.com/">LUCA theory</Link>. My projects include SaaS ventures, 
       System designing and full-stack development. Being comfortable with code as well as setting up businesses
-      allows me to rapidly plan and build practical SaaS products profitability in mind.
+      allows me to rapidly plan and build practical SaaS products with profitability in mind.
       If you’re interested in the tools and software I use check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
