@@ -20,17 +20,12 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'Github',
-    url: 'https://github.com/mayankjain25',
+    url: 'https://github.com/yorkzap',
     icon: 'github',
   },
   {
     label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/mayank-jain-688409208/',
+    url: 'https://www.linkedin.com/in/rajgursher-singh/',
     icon: 'linkedin',
-  },
-  {
-    label: 'Leetcode',
-    url: 'https://leetcode.com/jainmayank2509/',
-    icon: 'leetcode',
   },
 ];
