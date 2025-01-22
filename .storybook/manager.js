@@ -3,7 +3,7 @@ import { addons } from '@storybook/addons';
 
 addons.setConfig({
   theme: {
-    ...themes.dark,
+    ...themes.light,
     // brandImage: 'https://hamishw.com/icon.svg',
     brandTitle: 'Raj Singh Components',
     brandUrl: 'https://mayankjain.cf',
