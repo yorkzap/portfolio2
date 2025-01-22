@@ -21,7 +21,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['SaaS Builder', 'Full Stack'];
+const disciplines = ['SaaS', 'Full-Stack'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -73,8 +73,8 @@ export const Home = () => {
     <div className={styles.home}>
       <Meta
         title="Designer + Developer"
-        description="Portfolio of Raj Singh — a developer working on web & mobile
-          apps with a focus on building full fledged SaaS products."
+        description="Design portfolio of Raj Singh — a product designer working on web & mobile
+          apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
         id="intro"
